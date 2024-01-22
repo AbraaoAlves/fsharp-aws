@@ -1,6 +1,23 @@
+
+
+
 # ASP.NET Core Web API Serverless Application
 
 This project shows how to run an ASP.NET Core Web API project as an AWS Lambda exposed through Amazon API Gateway. The NuGet package [Amazon.Lambda.AspNetCoreServer](https://www.nuget.org/packages/Amazon.Lambda.AspNetCoreServer) contains a Lambda function that is used to translate requests from API Gateway into the ASP.NET Core framework and then the responses from ASP.NET Core back to API Gateway.
+
+
+## Local Run
+
+1. Use [devcontainer vscode extension with docker](https://code.visualstudio.com/docs/devcontainers/containers) or just [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/AbraaoAlves/fsharp-aws)
+
+2. run follow commands in terminal: 
+    
+    ```bash
+    dotnet build
+    dotnet run --project ./src/App
+    ```
+
+
 
 
 ### Project Files ###
