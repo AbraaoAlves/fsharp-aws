@@ -2,7 +2,7 @@
 
 
 open Microsoft.AspNetCore.Mvc
-
+open App.Services
 
 [<Route("api/[controller]")>]
 type ValuesController() =
@@ -10,7 +10,7 @@ type ValuesController() =
 
     [<HttpGet>]
     member this.Get() =
-        [|"value1"; "value2"|]
+        GetInfo.getSocial
 
     [<HttpGet("{id}")>]
     member this.Get(id: int) =

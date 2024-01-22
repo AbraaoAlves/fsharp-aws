@@ -3,7 +3,7 @@
 {
 	"name": "F# (.NET)",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/dotnet:1-6.0-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-6.0",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
@@ -17,8 +17,8 @@
 		"vscode": {		
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"Ionide.Ionide-fsharp",
-				"ms-dotnettools.csharp"
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"ionide.ionide-fsharp"
 			]
 		}		
 	},
